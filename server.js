@@ -1,10 +1,10 @@
-const express = require('express');
-const connectDB = require('./connection');
-const app = express();
+const mongoose = require('mongoose');
 
-connectDB();
-const PORT = process.env.PORT || 3000;
+const connectionString = 'mongodb://localhost:27017/myDatabase';
 
-app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
+mongoose.connect(connectionString, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true
 });
+
+const db = mongoose.connection;
