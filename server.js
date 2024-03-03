@@ -5,8 +5,7 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 // Connect to MongoDB
-mongoose.connect('mongodb://localhost:27017/mongodb+srv://cse341-api:7Mwathani77@cluster0.u9kddnv.mongodb.net/'; 
-{
+mongoose.connect('mongodb://localhost:27017/mongodb+srv://cse341-api:7Mwathani77@cluster0.u9kddnv.mongodb.net/';{
   useNewUrlParser: true,
   useUnifiedTopology: true
 });
