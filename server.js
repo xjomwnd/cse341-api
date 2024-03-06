@@ -9,9 +9,6 @@ const mongoose = require('mongoose');
 
 mongoose.connect('mongodb://localhost:27017/mydatabase');
 
-
-const db = mongoose.connection;
-
 // Define a schema for your documents
 const userSchema = new mongoose.Schema({
   name: String,
