@@ -5,13 +5,9 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 // Connect to MongoDB
-mongoose.connect('mongodb://localhost:27017/', {
-  useNewUrlParser: true,
-  useUnifiedTopology: true
-});
+const mongoose = require('mongoose');
 
-
-const db = mongoose.connection;
+mongoose.connect('mongodb://localhost:27017/mydatabase');
 
 // Define a schema for your documents
 const userSchema = new mongoose.Schema({
