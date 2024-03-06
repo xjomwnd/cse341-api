@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-mongoose.connect('mongodb://localhost:27017/mydatabase');
+mongoose.connect('mongodb://localhost:27017/mongodb+srv://cse341-api:7Mwathani77@cluster0.u9kddnv.mongodb.net/');
 
 // Define a schema for your documents
 const userSchema = new mongoose.Schema({
